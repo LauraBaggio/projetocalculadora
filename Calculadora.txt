@@ -57,3 +57,33 @@ public class Calculadora extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	public Calculadora() {
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 296, 398);
+
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNmero = new JLabel("N\u00FAmero 1");
+		lblNmero.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNmero.setBounds(10, 11, 79, 14);
+		contentPane.add(lblNmero);
+		
+		tfNum1 = new JTextField();
+		tfNum1.setBounds(99, 10, 86, 20);
+		contentPane.add(tfNum1);
+		tfNum1.setColumns(10);
+		
+		JLabel lblNmero_1 = new JLabel("N\u00FAmero 2");
+		lblNmero_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNmero_1.setBounds(10, 36, 79, 14);
+		contentPane.add(lblNmero_1);
+		
+		tfNum2 = new JTextField();
+		tfNum2.setColumns(10);
+		tfNum2.setBounds(99, 41, 86, 20);
+		contentPane.add(tfNum2);
+}
