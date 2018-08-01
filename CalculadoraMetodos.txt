@@ -21,4 +21,8 @@ public class CalculadoraMetodos {
 	public double adicao(){
 		return this.getValor1()+this.getValor2();
 	}
+	
+	public double subtracao(){
+		return this.getValor1()-this.getValor2();
+	}
 }
