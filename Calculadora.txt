@@ -23,3 +23,37 @@ import javax.swing.event.PopupMenuListener;
 import javax.swing.event.PopupMenuEvent;
 import javax.swing.JPasswordField;
 import javax.swing.JTable;
+
+public class Calculadora extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField tfNum1;
+	private JTextField tfNum2;
+	private JTextField tfResult;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+	JRadioButton rbadicao = new JRadioButton("Adi\u00E7\u00E3o");
+	JRadioButton rbsubtracao = new JRadioButton("Subtra\u00E7\u00E3o");
+	JRadioButton rbmultiplicacao = new JRadioButton("Multiplica\u00E7\u00E3o");
+	JRadioButton rbdivisao = new JRadioButton("Divis\u00E3o");
+	CalculadoraMetodos cm = new CalculadoraMetodos();
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Calculadora frame = new Calculadora();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
