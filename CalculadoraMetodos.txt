@@ -30,4 +30,8 @@ public class CalculadoraMetodos {
 	public double multiplicacao(){
 		return this.getValor1()*this.getValor2();
 	}
+
+	public double divisao(){
+		return this.getValor1()/this.getValor2();
+	}
 }
