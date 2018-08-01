@@ -22,7 +22,12 @@ public class CalculadoraMetodos {
 		return this.getValor1()+this.getValor2();
 	}
 	
+	
 	public double subtracao(){
 		return this.getValor1()-this.getValor2();
+	}
+
+	public double multiplicacao(){
+		return this.getValor1()*this.getValor2();
 	}
 }
